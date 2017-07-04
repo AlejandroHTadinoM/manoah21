@@ -1,0 +1,19 @@
+{
+  "name": "manoah21",
+  "version": "1.0.0",
+  "description": "Manoah21 microweb",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --config bs-config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlejandroHTadinoM/manoah21.git"
+  },
+  "author": "Alejandro H Tadino M",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlejandroHTadinoM/manoah21/issues"
+  },
+  "homepage": "https://github.com/AlejandroHTadinoM/manoah21#readme"
+}
