@@ -13,6 +13,7 @@
       <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
       <script type="text/javascript" src="js/modernizr.js"></script>
       <script type="text/javascript" src="js/responsee.js"></script>
+      <script src="js/date.js"></script>
       <!--[if lt IE 9]>
 	      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -24,7 +25,7 @@
          <div class="line">
             <div class="box">
                <div class="s-12 l-4 center">
-                  <img src="img/logo.png">
+                  <img src="img/logo.svg">
                </div>
             </div>
          </div>
@@ -46,9 +47,9 @@
          <!-- CAROUSEL -->  
          <div class="line">
             <div id="owl-demo" class="owl-carousel owl-theme  margin-bottom">
-               <div class="item"><img src="img/940x380.jpg" alt=""></div>
-               <div class="item"><img src="img/940x380-2.jpg" alt=""></div>
-               <div class="item"><img src="img/940x380-3.jpg" alt=""></div>
+               <div class="item"><img src="img/slider/slider-1.jpg" alt=""></div>
+               <div class="item"><img src="img/slider/slider-2.jpg" alt=""></div>
+               <div class="item"><img src="img/slider/slider-3.jpg" alt=""></div>
             </div>
          </div>
          <!-- ASIDE NAV AND CONTENT -->
@@ -57,27 +58,51 @@
                <div class="margin">
                    
                   <!-- CONTENT -->
-                  <article class="s-12 m-7 l-12">
-                    <h1>Manoah 21</h1>
-                    <h2>El mejor servicio técnico para todas las marcas</h2>
-                    <p>Manoah 21 ofrece servicios técnicos para la línea blanca de su hogar. Un servicio integral que incluye revisiones, mantenimiento preventivo, reparación y venta de repuestos originales. Un servicio prestado por técnicos de experiencia.</p>
+                  <article class="s-12 m-12 l-12">
+                    <div class="box" style="padding-bottom: 0;">
+                    <h1 class="page-title">Manoah 21</h1>
+                    <h2 class="page-subtitle">El mejor servicio técnico para todas las marcas</h2>
+                      <div class="s-12 m-6 l-6">
+                        <div class="lead">
+                           <p>Manoah 21 ofrece servicios técnicos para la línea blanca de su hogar. Un servicio integral que incluye revisiones, mantenimiento preventivo, reparación y venta de repuestos originales. Un servicio prestado por técnicos de experiencia.</p>
+                          <a href="contacto.html" class="btn">contactos</a>
+                        </div>
+                      </div>
+                      <div class="s-12 m-6 l-6">
+                        <img src="img/people.png" alt="" style="margin: 0 auto">
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="margin">
+                      <div class="s-12 m-4 l-4">
+                        <div class="box">
+                          <img src="img/service-1.jpg" alt="Revision">
+                        <div class="service-text">
+                          <h3>Revisión</h3>
+                          <p>Revisamos sus electrodomésticos y le ofrecemos una asesoría especializada para un diagnóstico exacto y oportuno del equipo.</p>
+                        </div>
+                      </div>
+                        </div>
+                      <div class="s-12 m-4 l-4">
+                        <div class="box">
+                          <img src="img/service-2.jpg" alt="Mantenimiento">
+                          <div class="service-text">
+                            <h3>Mantenimiento</h3>
+                            <p>Le ayudamos a prevenir el desgaste de sus electrodomésticos siguiendo los mantenimientos sugeridos por el fabricante.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="s-12 m-4 l-4">
+                        <div class="box">
+                          <img src="img/service-3.jpg" alt="Reparacion">
+                          <div class="service-text">
+                            <h3>Reparacion</h3>
+                            <p>Reparamos las averías que presente su equipo y ponemos a su disposición los repuestos originales necesarios según el caso.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
-                    <p>Revisión: Revisamos sus electrodomésticos y le ofrecemos una asesoría especializada para un diagnóstico exacto y oportuno del equipo.</p>
-
-                    <p>Mantenimiento: Le ayudamos a prevenir el desgaste de sus electrodomésticos siguiendo los mantenimientos sugeridos por el fabricante.</p>
-
-                    <p>Reparacion: Reparamos las averías que presente su equipo y ponemos a su disposición los repuestos originales necesarios según el caso.</p>
-
-                    <p>MANOAH21 presta un servicio de diagnósticos reparación, mantenimiento e Instalación de
- neveras, lavadoras, aire acondicionado, secadoras, calentadores, estufas, hornos en todas
- las marcas, con servicios a domicilio. los técnicos están capacitados por las grandes marcas
- para prestar servicios garantizado.</p>
-
-                  <p>Nuestro objetivo es que aparte de hacernos conocer en el mercado, los usuarios que entren a
- la Página puedan visualizar inmediatamente nuestros número de contacto, estos son
- (507) 69 02 89 33 – 296 45 36 para una asesoría personalizada y de esta manera asignar una
- visita para ayudarle a resolver la dificultad con el electrodoméstico.</p>
-                     
                   </article>
                </div>
             </div>
@@ -88,10 +113,14 @@
          <div class="box">
             <div class="s-12 l-6">
               <p>Cerro Viento Circunvalación A Casa 308 Ciudad de Panamá, Panamá · asesor21@manoah21.com · Teléfono (507) 6378 6375 - 296 45 36</p>
-               <p>Copyright <span id="year"></span>, Derechos reservados</p>
             </div>
             <div class="s-12 l-6">
-               <a class="right" href="http://www.clicnovo.com" title="ClicNovo Google Partner">Design by <strong>ClicNovo</strong></a>
+              <div class="s-12 l-12">
+                <a class="right" href="http://www.clicnovo.com" title="ClicNovo Google Partner">Design by <strong>ClicNovo</strong></a>
+              </div>
+              <div class="s-12 l-12">
+                <p class="right">Copyright <span id="year"></span>, Derechos reservados</p>
+              </div>    
             </div>
          </div>
       </footer>
@@ -112,7 +141,6 @@
          	navigation : true,
          	pagination : false
            });
-          /*===== Full year function =====*/ 
          }); 
       </script>
    </body>

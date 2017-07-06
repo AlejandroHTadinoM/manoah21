@@ -11,14 +11,14 @@
   margin:0;	
   }
 body {
-  background-image: url(../img/footer_lodyas.png);
+  background-image: url(../img/bg.png);
   background-repeat: repeat;
   font-size:100%;
   font-family:"Open Sans",Arial,sans-serif;
-  color:#444;
+  color:#36454F;
   }
 h1, h2, h3, h4, h5, h6 {
-  color:#444;
+  color:#36454F;
   font-weight: normal;
   margin:0.2em 0 0.2em 0;    
 }
@@ -30,7 +30,7 @@ h5 {font-size:1em;}
 h6 {font-size:0.9em;}    
 a, a:link, a:visited, a:hover, a:active {
   text-decoration:none;
-  color:#444;
+  color:#36454F;
 }
 img {
   border:0;
@@ -71,7 +71,8 @@ form {line-height:1.4em;}
 nav {
   display:block;
   width:100%;
-  background:#005fbe;
+  background: #0097C8;
+  border-radius: 0 0 1em 1em;
 }
 .line::after, nav::after, .center::after, .box::after, .margin::after {clear: both;}
 .line::before, .line::after, nav::before, nav::after, .center::before, .center::after, .box::before, .box::after, .margin::before, .margin::after {
@@ -98,7 +99,7 @@ nav {
   min-width:100%;
   padding:0.625em;
 }
-.top-nav li a:hover, .aside-nav li a:hover {background:#000;}
+.top-nav li a:hover, .aside-nav li a:hover {background: #0D47A1;}
 .top-nav li ul {display:none;}
 .top-nav li ul li {
   float:none;
@@ -134,7 +135,7 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
   font-size:0.7em;
   margin:0 0.625em;
 }
-.top-nav .active-item a {background:none repeat scroll 0 0 #000;}
+.top-nav .active-item a {background:none repeat scroll 0 0 #0D47A1;}
 .aside-nav > ul > li.active-item > a:link, .aside-nav > ul > li.active-item > a:visited {
   background:none repeat scroll 0 0 #999;
   color:#fff;
@@ -486,4 +487,70 @@ nav {
   float:none;
   margin:0 auto;
   display:block;
+}
+
+/********** Custom CSS **********/
+
+hr {
+  color: #758087;
+  background-color: #758087;
+  border-top: 1px solid #EEE;
+}
+
+.lead {
+  text-align: center;
+  margin-top: 20%;
+}
+
+.lead p {
+  margin-bottom: 2rem;
+  
+}
+
+.btn {
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+  background-color: #0097C8;
+  border-radius: .5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FAFAFA !important;
+}
+
+.service-text {
+  text-align: center;
+}
+
+.service-text p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #758087;
+}
+
+.page-title {
+  color: #0097C8;
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.page-subtitle {
+  text-align: center;
+}
+
+.page-subtitle::after {
+  content: '';
+  display: block;
+  margin: .5em auto;
+  width: 70%;
+  height: 1px;
+  background-color: #0097C8;
+}
+
+.icon-sm {
+  max-width: 32px;
+}
+
+.icon-lg {
+  max-width: 64px;
 }
