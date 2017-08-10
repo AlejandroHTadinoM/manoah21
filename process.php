@@ -3,6 +3,7 @@ require 'PHPMailerAutoload.php';
 $nombre = $_POST['nombre'];
 $asunto = $_POST['asunto'];
 $email = $_POST['email'];
+$phone = $_POST['phone'];
 $mensaje = $_POST['mensaje'];
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 	echo "<span class=\"error\">Error al validar el E-mail</span>";
@@ -18,7 +19,7 @@ $mail->addBCC('formularios@clicnovo.com');
 $mail->addReplyTo($email, $nombre);
 $mail->Subject = "Formulario: " . $asunto;
 $mail->isHTML(true);
-$mail->Body = $mensaje;
+$mail->Body = $mensaje . $phone;
 
 if (!$mail->send()) {
     echo "<span class=\"error\">Mailer Error: " . $mail->ErrorInfo . "</span>";

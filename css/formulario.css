@@ -29,7 +29,7 @@
     width: 100%;
     border-color: #1cc392;
 }
-.clicform input[type=text], input[type=email] {
+.clicform input[type=text], input[type=email], input[type=tel] {
     border-left: none;
     border-right: none;
     border-top: none;

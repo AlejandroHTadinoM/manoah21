@@ -58,15 +58,17 @@
 						<div class="s-12 m-8 l-6">
                           <form action="process.php" id="formulario" class="center clicform" method="POST">
                             <label for="nombre" class="required">Nombre</label>
-                            <input type="text" required name="nombre" placeholder="Inserte su nombre"><br>
+                            <input type="text" required name="nombre" placeholder="Inserte su nombre" required><br>
                             <label for="email" class="required">Asunto</label>
-                            <input type="text" required placeholder="Inserte el asunto del mensaje" name="asunto"><br>
+                            <input type="text" required placeholder="Inserte el asunto del mensaje" name="asunto" required><br>
                             <label for="email" class="required">E-mail</label>
-                            <input type="email" required placeholder="Ingrese su dirección de E-mail" name="email"><br>
-                            <label for="email" class="required">Mensaje</label>
-                            <textarea name="mensaje" rows="4" required placeholder="Deje su mensaje"></textarea><br>
-                              <div class="s-12 m-6 margin-bottom"><input type="reset" class="reset" value="Borrar Todo"></div>
-                              <div class="s-12 m-6 margin-bottom"><input type="submit" class="enviar" value="Enviar"></div>
+                            <input type="email" required placeholder="Ingrese su dirección de E-mail" name="email" required><br>
+                            <label for="email" class="required">Telefono</label>
+                            <input type="tel" required placeholder="Ingrese su número de telefono" name="phone" required><br>
+                            <label for="phone" class="required">Mensaje</label>
+                            <textarea name="mensaje" rows="4" required placeholder="Deje su mensaje" required></textarea><br>
+                            <div class="s-12 m-6 margin-bottom"><input type="reset" class="reset" value="Borrar Todo"></div>
+                            <div class="s-12 m-6 margin-bottom"><input type="submit" class="enviar" value="Enviar"></div>
                           </form>
                           </div>
                           <div class="s-12 m-4 l-6" style="padding-top: 40px; padding-left: 20px;">
